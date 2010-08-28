@@ -122,8 +122,7 @@ def make_rss_feed(json_feed):
 
 if __name__ == '__main__':
     if len(sys.argv) == 1:
-        print "usage: %s <access_token>" % sys.argv[0]
-        print
+        print __doc__
         print "If you don't have an access token, use this:"
         print
         f = urllib2.urlopen(access_token_url % (app_id, app_secret))
