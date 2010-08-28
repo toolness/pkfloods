@@ -1,5 +1,5 @@
 This is a simple proof-of-concept script provided as one possible
-solution to the following problem placed in the Crisis Commons 2010
+solution to the following problem placed in the CrisisCommons 2010
 [Pakistan Floods Wiki][]:
 
     Get comments from pkfloods facebook group exported vis rss so it can
