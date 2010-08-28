@@ -14,6 +14,14 @@
     http://www.facebook.com/toolness.
 """
 
+# This script uses Facebook's Graph API:
+#
+#   http://developers.facebook.com/docs/api
+#
+# I suspect that a "real" solution would use the API's real-time updates
+# functionality instead of constantly polling, but I didn't have time to
+# check it out.
+
 import urllib2
 import sys
 import xml.dom.minidom
@@ -35,6 +43,10 @@ app_secret = "a34c2a4c8ef508944eff920c71ff72c6"
 profile_url = "https://graph.facebook.com/PKFloods/feed?access_token=%s"
 access_token_url = ("https://graph.facebook.com/oauth/access_token?"
                     "type=client_cred&client_id=%s&client_secret=%s")
+
+# This is just a sample feed to provide an idea of what the Graph API's
+# response looks like. Could also be useful for unit tests, which
+# don't currently exist.
 
 sample_feed = {
     u'data': [
